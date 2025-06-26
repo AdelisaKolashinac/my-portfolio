@@ -9,13 +9,10 @@ export default function About() {
         <h2>About Me</h2>
         <hr />
         <div className={styles.box_one}></div>
-        <p className={styles.page__p}>
-          Hi, I am Adelisa Kolashinac — an aspiring frontend developer currently
-          wrapping up my studies at a frontend development academy. My journey
-          into tech has been driven by a deep interest in building beautiful,
-          functional, and responsive web experiences.
+        <p className={styles.page__paragraph_01}>
+          Hi, I am Adelisa Kolashinac — frontend developer with a background in science and a strong foundation in problem-solving, attention to detail, and adaptability. After nearly two years in the food industry, I’ve transitioned into web development—building responsive, user-focused applications using React, TypeScript, and modern tools. Eager to contribute to a collaborative development team.
         </p>
-        <p className={styles.page__p}>
+        <p className={styles.page__paragraph_01}>
           I have been diving into <strong>HTML, CSS, JavaScript,</strong> and
           modern frameworks like <strong>React and Next.js</strong>. Through
           hands-on projects and continuous learning, I have developed a strong
@@ -30,7 +27,7 @@ export default function About() {
         <Certificates />
         <h2>Let us Connect</h2>
         <hr />
-        <p className={styles.page__p}>
+        <p className={styles.page__paragraph_01}>
           I am currently open to internship or junior opportunities where I can
           grow and contribute as part of a team. Feel free to{" "}
           <Link href="/contact">

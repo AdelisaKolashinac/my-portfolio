@@ -34,8 +34,8 @@ export default function ProjectCard({ project }: { project: Project }) {
                   <Image
                     src={img}
                     alt={"Figma design"}
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     className={styles.projectCard__image}
                   />
                 </div>
@@ -50,8 +50,8 @@ export default function ProjectCard({ project }: { project: Project }) {
                   <Image
                     src={img}
                     alt={"Coded Version"}
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     className={styles.projectCard__image}
                   />
                 </div>

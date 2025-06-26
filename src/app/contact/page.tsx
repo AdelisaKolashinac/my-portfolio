@@ -5,7 +5,7 @@ export default function Contact() {
     <div className={styles.page}>
       <h2>Contact Me</h2>
       <hr />
-      <p className={styles.page__p}>
+      <p className={styles.page__paragraph_01}>
         I would love to hear from you — whether it is about a frontend project,
         internship opportunity, or just to say hi.
       </p>

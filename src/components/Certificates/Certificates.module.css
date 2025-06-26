@@ -4,6 +4,13 @@
   z-index: 9;
 }
 
+.certificatesWrapper {
+  background-color: #5555556c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+}
+
 .certificatesPDF {
   text-align: start;
   margin: 2rem 0;

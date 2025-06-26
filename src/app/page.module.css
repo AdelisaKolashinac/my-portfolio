@@ -66,11 +66,17 @@
   background: #0b0c0e;
 }
 
-.page__p {
+.page__paragraph_01 {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #aaa;
+}
+
+.page__paragraph_02 {
+  color: #aaa;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
 /* Background boxes */

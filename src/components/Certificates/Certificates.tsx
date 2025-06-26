@@ -7,24 +7,31 @@ export default function Certificates() {
     <div className={styles.certificates}>
       <h2>Module Achievements & Certifications</h2>
       <hr />
-      <div className={styles.certificatesPDF}>
-        {certificates.map((cert) => (
-          <a key={cert.alt} href={cert.src} target="_blank">
-            <div className={styles.PDF}> 📄 {cert.alt}</div>
-          </a>
-        ))}
-      </div>
-      <div className={styles.modulAchievements}>
-        {modulAchievements.map((module) => (
-          <a
-            href={module.src}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={module.alt}
-          >
-            <Image src={module.src} alt={module.alt} width={200} height={200} />
-          </a>
-        ))}
+      <div className={styles.certificatesWrapper}>
+        <div className={styles.certificatesPDF}>
+          {certificates.map((cert) => (
+            <a key={cert.alt} href={cert.src} target="_blank">
+              <div className={styles.PDF}> 📄 {cert.alt}</div>
+            </a>
+          ))}
+        </div>
+        <div className={styles.modulAchievements}>
+          {modulAchievements.map((module) => (
+            <a
+              href={module.src}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={module.alt}
+            >
+              <Image
+                src={module.src}
+                alt={module.alt}
+                width={200}
+                height={200}
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

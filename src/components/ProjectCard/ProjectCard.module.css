@@ -24,14 +24,12 @@
 
 .projectCard__imgWrapper {
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
   margin: 1.5rem 0;
-  flex-wrap: wrap;
 }
 
 .projectCard__imgContainer {
-  display: flex;
-  flex-direction: column-reverse;
+  flex: 1;
 }
 
 .projectCard__imgContainer p {
@@ -41,7 +39,9 @@
 
 .projectCard__images {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .projectCard__image {
