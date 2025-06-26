@@ -1,0 +1,40 @@
+.certificates {
+  padding: 2rem;
+  position: relative;
+  z-index: 9;
+}
+
+.certificatesPDF {
+  text-align: start;
+  margin: 2rem 0;
+}
+
+.PDF {
+  font-size: 1.5rem;
+  padding: 0.3rem 0;
+}
+
+.modulAchievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.modulAchievements a {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modulAchievements a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.modulAchievements a:hover img {
+  transform: scale(1.05);
+}

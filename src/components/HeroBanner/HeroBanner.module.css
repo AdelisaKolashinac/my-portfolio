@@ -1,0 +1,42 @@
+.heroBanner {
+  height: 70vh;
+  padding-top: 80px;
+}
+
+.heroContent {
+  width: 60%;
+  height: 100%;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-spacing: 4px;
+  color: #ec4068;
+}
+
+.heroContent h2 {
+  margin: 1rem 0;
+  font-size: 3.5rem;
+  background-color: #141b240c;
+  transform: translateX(-15px);
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.heroContent:hover h2 {
+  transform: translateX(-50px);
+}
+
+.heroContent:hover p {
+  transform: translateX(-50px);
+}
+
+.heroContent p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #141b240c;
+  line-height: 1.5;
+  transform: translateX(-15px);
+  transition: all 0.3s;
+  display: inline-block;
+}
