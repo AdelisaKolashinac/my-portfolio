@@ -1,4 +1,5 @@
-.homepage {
+/* Homepage style */
+.home {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("/photo-1619410283995-43d9134e7656.avif");
@@ -9,7 +10,7 @@
   justify-content: space-between;
 }
 
-.overviewCards {
+.home__overviewCards {
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -19,24 +20,28 @@
   color: #ec4068;
 }
 
-.card {
+.home__card {
   padding: 2rem 1.5rem;
   flex: 1;
   line-height: 1.5;
 }
 
-.card h3 {
+.home__card:not(:last-child) {
+  border-right: 1px solid #0a0e1393;
+}
+
+.home__cardTitle {
   margin: 0.8rem 0;
   font-size: 2rem;
 }
 
-.card p {
+.home__cardText {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
 }
 
-.cardButton {
+.home__cardButton {
   background-color: transparent;
   padding: 10px 20px;
   display: inline-block;
@@ -47,13 +52,9 @@
   transition: background-color 0.3s ease;
 }
 
-.cardButton:hover {
+.home__cardButton:hover {
   background-color: #7e690f;
   color: white;
-}
-
-.card:not(:last-child) {
-  border-right: 1px solid #0a0e1393;
 }
 
 /* Pages style */
@@ -61,26 +62,30 @@
   min-height: 100vh;
   padding: 4rem 2rem;
   font-family: "Inter", sans-serif;
-  color: #ec4068;
   position: relative;
   background: #0b0c0e;
 }
 
-.page__paragraph_01 {
+.page__content {
+  max-width: 70%;
+  margin: 0 auto 4rem;
+  text-align: center;
+  z-index: 9;
+}
+
+.page__title {
+  color: #ec4068;
+}
+
+.page__paragraph {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.5;
   margin-bottom: 1.5rem;
   color: #aaa;
 }
 
-.page__paragraph_02 {
-  color: #aaa;
-  line-height: 1;
-  margin-bottom: 1rem;
-}
-
 /* Background boxes */
-.box_one {
+.page__box_one {
   height: 140px;
   width: 140px;
   border: 3px solid #ec4068;
@@ -90,7 +95,7 @@
   z-index: 1;
 }
 
-.box_two {
+.page__box_two {
   height: 270px;
   width: 270px;
   border: 3px solid #ec4068;
@@ -101,7 +106,7 @@
   z-index: 1;
 }
 
-.box_three {
+.page__box_three {
   height: 400px;
   width: 400px;
   border: 3px solid #ec4068;
@@ -112,12 +117,15 @@
   z-index: 1;
 }
 
-/* About Me Page */
-.aboutContent {
-  max-width: 70%;
-  margin: 0 auto 4rem;
-  text-align: center;
-  z-index: 9;
+.page__box_four {
+  height: 400px;
+  width: 400px;
+  border: 3px solid #ec4068;
+  position: absolute;
+  transform: rotate(50deg);
+  right: 10%;
+  top: 30%;
+  z-index: 1;
 }
 
 /* Projects Page */
@@ -130,7 +138,7 @@
 
 .projects__subtitle {
   color: #aaa;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .projects__grid {
@@ -140,22 +148,33 @@
 }
 
 /* Contact Page */
-
-.socials {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 1rem;
+.contactContent {
+  max-width: 70%;
+  margin: 0 auto 4rem;
+  text-align: center;
+  z-index: 9;
 }
 
-.socials a {
-  color: #1a1a1a;
+.contactSocials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contactSocials svg {
+  width: 20px;
+}
+
+.contactSocials a {
+  display: flex;
+  gap: 0.7rem;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.socials a:hover {
+.contactSocials a:hover {
   text-decoration: underline;
   color: #555;
 }

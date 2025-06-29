@@ -4,37 +4,43 @@
   z-index: 9;
 }
 
-.certificatesWrapper {
-  background-color: #5555556c;
+.certificates__title {
+  color: #ec4068;
+}
+
+.certificates__wrapper {
+  background-color: #303030fb;
   border-radius: 12px;
   padding: 1.5rem;
   margin: 1rem auto;
 }
 
-.certificatesPDF {
+.certificates__pdfContainer {
+  color: #ec4068;
   text-align: start;
   margin: 2rem 0;
 }
 
-.PDF {
+.certificates__pdfItem {
   font-size: 1.5rem;
   padding: 0.3rem 0;
 }
 
-.modulAchievements {
+.certificates__moduleContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
-.modulAchievements a {
+
+.certificates__moduleItem {
   border: 2px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
-.modulAchievements a img {
+.certificates__moduleItem img {
   width: 100%;
   height: 100%;
   display: block;
@@ -42,6 +48,6 @@
   transition: transform 0.3s ease;
 }
 
-.modulAchievements a:hover img {
+.certificates__moduleItem:hover img {
   transform: scale(1.05);
 }

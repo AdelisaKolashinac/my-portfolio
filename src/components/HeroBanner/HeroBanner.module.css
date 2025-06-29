@@ -1,9 +1,9 @@
-.heroBanner {
+.hero {
   height: 70vh;
   padding-top: 80px;
 }
 
-.heroContent {
+.hero__content {
   width: 60%;
   height: 100%;
   margin-left: 70px;
@@ -14,7 +14,7 @@
   color: #ec4068;
 }
 
-.heroContent h2 {
+.hero__content h2 {
   margin: 1rem 0;
   font-size: 3.5rem;
   background-color: #141b240c;
@@ -23,20 +23,19 @@
   display: inline-block;
 }
 
-.heroContent:hover h2 {
+.hero__content:hover h2 {
   transform: translateX(-50px);
 }
 
-.heroContent:hover p {
-  transform: translateX(-50px);
-}
-
-.heroContent p {
+.hero__content p {
   font-size: 1.8rem;
   font-weight: 600;
+  margin: 0.4rem 0;
   background-color: #141b240c;
-  line-height: 1.5;
   transform: translateX(-15px);
   transition: all 0.3s;
-  display: inline-block;
+}
+
+.hero__content:hover p {
+  transform: translateX(-50px);
 }
