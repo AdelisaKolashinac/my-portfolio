@@ -29,9 +29,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <p>Built with:</p>
           <ul className={styles.projectCard__techList}>
             {project.tech.map((tech, index) => (
-              <li key={index}>
-                {tech}
-              </li>
+              <li key={index}>{tech}</li>
             ))}
           </ul>
         </div>
@@ -69,7 +67,12 @@ export default function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
         </div>
-        <a href={project.repo} target="_blank" rel="noreferrer" className={styles.projectCard__link}>
+        <a
+          href={project.repo}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.projectCard__link}
+        >
           View Code on GitHub
         </a>
       </div>

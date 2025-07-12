@@ -1,33 +1,25 @@
 "use client";
-
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import styles from "./Header.module.css";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import styles from "./Header.module.css";
 
 export default function Header() {
-  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return (
-      <nav className={styles.nav}>
-        <Link href="/" className={styles.logo}>
-          MyPortfolio
-        </Link>
-        <div className={styles.links}>
-          <Link href="/">Home</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
-      </nav>
-    );
-  }
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  if (!mounted) return null;
+
+  const isActive = (path: string) => pathname === path;
 
   return (
     <nav
@@ -36,25 +28,32 @@ export default function Header() {
       <Link href="/" className={styles.logo}>
         MyPortfolio
       </Link>
-      <div className={styles.links}>
-        <Link href="/" className={`${pathname === "/" ? styles.active : ""}`}>
+
+      {/* Mobile menu icon */}
+      <div
+        className={styles["menu-icon"]}
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        ☰
+      </div>
+
+      {/* Navigation Links */}
+      <div className={`${styles.links} ${menuOpen ? styles.open : ""}`}>
+        <Link href="/" className={isActive("/") ? styles.active : ""}>
           Home
         </Link>
         <Link
           href="/projects"
-          className={`${pathname === "/projects" ? styles.active : ""}`}
+          className={isActive("/projects") ? styles.active : ""}
         >
           Projects
         </Link>
-        <Link
-          href="/about"
-          className={`${pathname === "/about" ? styles.active : ""}`}
-        >
+        <Link href="/about" className={isActive("/about") ? styles.active : ""}>
           About
         </Link>
         <Link
           href="/contact"
-          className={`${pathname === "/contact" ? styles.active : ""}`}
+          className={isActive("/contact") ? styles.active : ""}
         >
           Contact
         </Link>

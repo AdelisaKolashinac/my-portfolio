@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 2rem;
+  padding: 0.5rem 2rem;
   position: fixed;
   top: 0;
   z-index: 10;
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(3px);
   font-family: "Playfair Display", serif;
   color: #b28e00;
 }
@@ -18,6 +18,10 @@
   color: #b28e00;
   text-shadow: 3px 4px 3px #b28e00;
   letter-spacing: 1.5px;
+}
+
+.links {
+  display: flex;
 }
 
 .links a {
@@ -32,4 +36,37 @@
   border-bottom: 1px solid #b28e00;
 }
 
+.menu-icon {
+  display: none;
+}
 
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #0b0c0e;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .links a {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #b28e00;
+  }
+}

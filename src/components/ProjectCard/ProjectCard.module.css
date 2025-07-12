@@ -59,6 +59,7 @@
 .projectCard__imgGrid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -84,4 +85,62 @@
 
 .projectCard__link:hover {
   border-color: #b28e00;
+}
+
+@media (max-width: 1024px) {
+  .projectCard__tech {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .projectCard__techList {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile Version */
+@media (max-width: 425px) {
+  .projectCard {
+    width: 90%;
+    padding: 1.3rem;
+  }
+
+  .projectCard__title {
+    font-size: 1.3rem;
+  }
+
+  .projectCard__desc {
+    font-size: 0.9rem;
+  }
+
+  .projectCard__tech {
+    justify-content: flex-start;
+  }
+
+  .projectCard__techList {
+    padding-left: 1.3rem;
+    gap: 1.5rem;
+  }
+
+  .projectCard__imgGrid {
+    justify-content: center;
+  }
+
+  .projectCard__imgThumb {
+    margin-bottom: 0;
+  }
+
+  .projectCard__link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .projectCard__title {
+    font-size: 1.2rem;
+  }
+
+  .projectCard__desc {
+    font-size: 0.8rem;
+  }
 }

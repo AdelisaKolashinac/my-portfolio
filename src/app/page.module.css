@@ -1,6 +1,5 @@
-/* Homepage style */
 .home {
-  height: 100vh;
+  min-height: 100dvh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("/photo-1619410283995-43d9134e7656.avif");
   background-size: cover;
@@ -10,7 +9,7 @@
   justify-content: space-between;
 }
 
-.home__overviewCards {
+.home__cardContainer {
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -23,7 +22,6 @@
 .home__card {
   padding: 2rem 1.5rem;
   flex: 1;
-  line-height: 1.5;
 }
 
 .home__card:not(:last-child) {
@@ -82,12 +80,16 @@
   line-height: 1.5;
   margin-bottom: 1.5rem;
   color: #aaa;
+  position: relative;
+  z-index: 9;
 }
 
 /* Background boxes */
 .page__box_one {
-  height: 140px;
-  width: 140px;
+  width: 20vw;
+  height: 20vw;
+  max-width: 140px;
+  max-height: 140px;
   border: 3px solid #ec4068;
   position: absolute;
   transform: rotate(70deg);
@@ -107,8 +109,10 @@
 }
 
 .page__box_three {
-  height: 400px;
-  width: 400px;
+  width: 40vw;
+  height: 40vw;
+  max-width: 400px;
+  max-height: 400px;
   border: 3px solid #ec4068;
   position: absolute;
   transform: rotate(20deg);
@@ -148,25 +152,18 @@
 }
 
 /* Contact Page */
-.contactContent {
-  max-width: 70%;
-  margin: 0 auto 4rem;
-  text-align: center;
-  z-index: 9;
-}
-
-.contactSocials {
+.contact__socials {
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.contactSocials svg {
+.contact__socials svg {
   width: 20px;
 }
 
-.contactSocials a {
+.contact__socials a {
   display: flex;
   gap: 0.7rem;
   color: #fff;
@@ -174,7 +171,57 @@
   transition: color 0.3s ease;
 }
 
-.contactSocials a:hover {
+.contact__socials a:hover {
   text-decoration: underline;
   color: #555;
+}
+
+@media (max-width: 1024px) {
+  .home__cardText {
+    font-size: 1rem;
+  }
+
+  .contact__socials {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+/* Tablet version */
+@media (max-width: 768px) {
+  .home__cardContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .home__card {
+    padding: 1rem 1.5rem;
+  }
+
+  .contact__socials {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .page__box_one,
+  .page__box_two,
+  .page__box_three,
+  .page__box_four {
+    display: none;
+  }
+}
+
+/* Mobile version */
+@media (max-width: 425px) {
+  .page {
+    padding: 4rem 0;
+  }
+
+  .page__content {
+    max-width: 90%;
+  }
+
+  .page__paragraph {
+    font-size: 1rem;
+  }
 }

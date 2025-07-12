@@ -39,3 +39,63 @@
 .hero__content:hover p {
   transform: translateX(-50px);
 }
+
+@media (max-width: 1024px) {
+  .hero__content h2 {
+    font-size: 3.2rem;
+  }
+
+  .hero__content p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Table version */
+@media (max-width: 768px) {
+  .hero__content {
+    width: 90%;
+    margin-left: 40px;
+  }
+
+  .hero__content p {
+    font-size: 1.3rem;
+    transform: translateX(0);
+  }
+
+  .hero__content h2 {
+    transform: translateX(0);
+  }
+
+  .hero__content:hover h2 {
+    transform: translateX(0);
+  }
+
+  .hero__content:hover p {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile version */
+@media (max-width: 425px) {
+  .hero__content {
+    margin-left: 20px;
+  }
+
+  .hero__content h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero__content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero__content h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero__content p {
+    font-size: 0.9rem;
+  }
+}

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <HeroBanner />
-      <div className={styles.home__overviewCards}>
+      <div className={styles.home__cardContainer}>
         <div className={styles.home__card}>
           <h3 className={styles.home__cardTitle}>About Me</h3>
           <p className={styles.home__cardText}>

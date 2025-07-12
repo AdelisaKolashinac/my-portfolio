@@ -6,15 +6,14 @@ import styles from "../page.module.css";
 export default function Contact() {
   return (
     <div className={styles.page}>
-      <div className={styles.contactContent}>
-        <h2>Contact Me</h2>
+      <div className={styles.page__content}>
+        <h2 className={styles.page__title}>Contact Me</h2>
         <hr />
-        <div className={styles.box_one}></div>
-        <p className={styles.page__paragraph_01}>
+        <p className={styles.page__paragraph}>
           I would love to hear from you — whether it is about a frontend
           project, internship opportunity, or just to say hi.
         </p>
-        <div className={styles.contactSocials}>
+        <div className={styles.contact__socials}>
           <a href="mailto:adelisa@example.com">
             <FontAwesomeIcon icon={faEnvelope} />{" "}
             <span>adelisalicina@outlook.com</span>
@@ -29,7 +28,7 @@ export default function Contact() {
             <FontAwesomeIcon icon={faLinkedin} />{" "}
             <span>Adelisa Kolashinac</span>
           </a>
-          <div className={styles.box_two}></div>
+          <div className={styles.page__box_two}></div>
         </div>
       </div>
     </div>
