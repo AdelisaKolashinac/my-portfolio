@@ -30,6 +30,22 @@ Welcome to my personal portfolio website! This site showcases who I am, the proj
 
 ---
 
+## 🖼️ Screenshots
+
+### 🧑‍💻 Home Page
+![Home Page](./public/screenshots/portfolio-sc-01.png)
+
+### 🧑‍💻 About Me Page
+![About Page](./public/screenshots/portfolio-sc-02.png)
+
+### 📁 Projects Page
+![Projects Page](./public/screenshots/portfolio-sc-03.png)
+
+### 📬 Contact Page
+![Contact Page](./public/screenshots/portfolio-sc-04.png)
+
+---
+
 ## 🚀 Getting Started (for Devs)
 
 If you'd like to run this project locally:
@@ -40,11 +56,13 @@ cd my-portfolio
 npm install
 npm run dev
 
+---
 
 ## 🔖 License
 
 This project is licensed under the [MIT License](./LICENSE).
 
+---
 
 📬 Contact
 
