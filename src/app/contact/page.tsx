@@ -14,16 +14,21 @@ export default function Contact() {
           project, internship opportunity, or just to say hi.
         </p>
         <div className={styles.contact__socials}>
-          <a href="mailto:adelisa@example.com">
+          <a href="mailto:adelisalicina@outlook.com" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope} />{" "}
             <span>adelisalicina@outlook.com</span>
           </a>
-          <a href="https://github.com/AdelisaKolashinac" target="_blank">
+          <a
+            href="https://github.com/AdelisaKolashinac"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} /> <span>AdelisaKolashinac</span>
           </a>
           <a
-            href="www.linkedin.com/in/adelisa-kolashinac-9b7669212"
+            href="https://www.linkedin.com/in/adelisa-kolashinac-9b7669212"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />{" "}
             <span>Adelisa Kolashinac</span>
