@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import styles from "../page.module.css";
 
@@ -13,6 +13,24 @@ export default function Contact() {
           I would love to hear from you — whether it is about a frontend
           project, internship opportunity, or just to say hi.
         </p>
+
+        <p className={styles.page__paragraph}>
+          📍 Based in Skopje, North Macedonia (CET)
+        </p>
+
+        <p className={styles.page__paragraph}>
+          ✅ Currently open to internship and junior frontend developer roles.
+        </p>
+
+        <a
+          href="/resume-AdelisaKolashinac.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.resume__link}
+        >
+          <FontAwesomeIcon icon={faFilePdf} /> Download My Resume
+        </a>
+
         <div className={styles.contact__socials}>
           <a href="mailto:adelisalicina@outlook.com" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope} />{" "}

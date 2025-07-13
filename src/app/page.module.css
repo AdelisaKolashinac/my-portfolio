@@ -159,8 +159,13 @@
   align-items: center;
 }
 
-.contact__socials svg {
+.contact__socials svg,
+.resume__link svg {
   width: 20px;
+}
+
+.resume__link {
+  color: #fff;
 }
 
 .contact__socials a {
